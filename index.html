@@ -9,6 +9,7 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
 body, html {
@@ -18,7 +19,7 @@ body, html {
 }
 
 /* Create a Parallax Effect */
-.bgimg-1, .bgimg-2, .bgimg-3 {
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -33,13 +34,17 @@ body, html {
 
 /* Second image (Portfolio) */
 .bgimg-2 {
-    background-image: url("./images/3.jpg");
+    background-image: url("./images/1.1.jpg");
     min-height: 400px;
 }
 
 /* Third image (Contact) */
 .bgimg-3 {
-    background-image: url("./images/4.jpg");
+    background-image: url("./images/2.jpg");
+    min-height: 400px;
+}
+.bgimg-4 {
+    background-image: url('./images/4.jpg');
     min-height: 400px;
 }
 
@@ -61,8 +66,8 @@ body, html {
   display: -webkit-flex;
     display: flex;
     -webkit-flex-direction: column;
-    flex-direction: column;
-}
+    flex-direction: column;}
+
 
 
 
@@ -110,6 +115,8 @@ body, html {
   <div class="w3-row">
     <div class="w3-col m6 w3-center w3-padding-large">
       <p><b><i class="fa fa-user w3-margin-right"></i>Aazim Bill SE Yaswant</b></p><br>
+      <p><b><i class="fa fa-graduation-cap" aria-hidden="true"></i>Computer Science UnderGraduate @ IIT Roorkee</b></p><br>
+
       <img src="./images/profile.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
     </div>
 
@@ -148,33 +155,39 @@ body, html {
 </div>
 
 <!-- Container (Portfolio Section) -->
-<div class="w3-content w3-container w3-padding-64" id="portfolio">
-  <h3 class="w3-center">MY WORK</h3>
-  <p class="w3-center"><em>Here are some of my latest lorem work ipsum tipsum.<br> Click on the links to read the full blog.</em></p><br>
+<div  id="portfolio" style="text-align: center">
+  <h3 >MY WORK</h3>
+  <p ><em>Here are some of my latest lorem work ipsum tipsum.<br> Click on the links to read the full blog.</em></p><br>
 
   <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
-  <div class="w3-row-padding blog container container-fluid">
-  <hr>
-  <div class=".flex-item"><h4>1) lorem ipsum</h4><br>
-  <p>lorem ipsum somethin something</p></div>
-  <hr>
-  <div class=".flex-item"><h4>2) lorem ipsum</h4><br>
+  <div class="w3-row-padding blog container container-fluid"><hr>
+  <div class="flex-item"><h4 style="  font-family: 'Anton', sans-serif;">1) lorem ipsum</h4><br>
+  <p>lorem ipsum somethin something</p></div><hr>
+  <div class="flex-item"><h4 style="  font-family: 'Anton', sans-serif;">2) lorem ipsum</h4><br>
   <p>lorem ipsum somethin something</p></div></div>
   </div>
      
-    <button class="w3-button w3-padding-large w3-center w3-light-grey" style="margin-top:64px">LOAD MORE</button>
+    <button class="btn btn-info" style="margin-top:64px;margin-left: auto">LOAD MORE</button>
   </div>
 </div>
 
-<!-- Modal for full size images on click-->
-<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
-  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
-  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-    <img id="img01" class="w3-image">
-    <p id="caption" class="w3-opacity w3-large"></p>
+<div class="bgimg-4 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">TUTORIAL</span>
   </div>
 </div>
+<div  id="tutorial" style="text-align: center">
+  <h3 >Tutorials</h3>
+  <p ><em>Here are some of my tutorials on information security.<br> Click on the links to read the full tutorial.</em></p><br>
 
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="w3-row-padding blog container container-fluid"><hr>
+  <div class="flex-item"><h4 style="  font-family: 'Anton', sans-serif;">1) lorem ipsum</h4><br>
+  <p>lorem ipsum somethin something</p></div><hr>
+  <div class="flex-item"><h4 style="  font-family: 'Anton', sans-serif;">2) lorem ipsum</h4><br>
+  <p>lorem ipsum somethin something</p></div></div>
+  </div>
+  <div class="btn btn-info btn-center">LOAD MORE</div>
 <!-- Third Parallax Image with Portfolio Text -->
 <div class="bgimg-3 w3-display-container w3-opacity-min">
   <div class="w3-display-middle">
