@@ -9,8 +9,14 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
 <style>
+a:hover{
+  text-decoration: none;
+}
+
+
 body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
 body, html {
     height: 100%;
@@ -40,7 +46,7 @@ body, html {
 
 /* Third image (Contact) */
 .bgimg-3 {
-    background-image: url("./images/2.jpg");
+    background-image: url("./images/7.jpg");
     min-height: 400px;
 }
 .bgimg-4 {
@@ -71,8 +77,16 @@ body, html {
 
 
 
+
 </style>
 <body>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+   
+        $("#slide").slideUp("slow");
+    
+</script>
 
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
@@ -83,6 +97,7 @@ body, html {
     <a href="#home" class="w3-bar-item w3-button blck">HOME</a>
     <a href="#about" class="w3-bar-item w3-button w3-hide-small blck"><i class="fa fa-user"></i> ABOUT</a>
     <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small blck"><i class="fa fa-th"></i> WRITE-UPS</a>
+    <a href="#tutorial" class="w3-bar-item w3-button w3-hide-small blck"><i class="fa fa-book"></i> TUTORIALS</a>
     <a href="#contact" class="w3-bar-item w3-button w3-hide-small blck"><i class="fa fa-envelope"></i> CONTACT</a>
     <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
       <i class="fa fa-search fa-reverse"></i>
@@ -101,7 +116,7 @@ body, html {
 <!-- First Parallax Image with Logo Text -->
 <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
   <div class="w3-display-middle" style="white-space:nowrap;">
-    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity"><span class="w3-hide-small">PWN.EAT.SLEEP.REPEAT</span></span>
+    <span id="slide"  class="w3-center w3-padding-large w3-black w3-xlarge  w3-animate-opacity"><span >PWN.EAT.SLEEP.REPEAT</span></span>
   </div>
 </div>
 
@@ -117,7 +132,7 @@ body, html {
       <p><b><i class="fa fa-user w3-margin-right"></i>Aazim Bill SE Yaswant</b></p><br>
       <p><b><i class="fa fa-graduation-cap" aria-hidden="true"></i>Computer Science UnderGraduate @ IIT Roorkee</b></p><br>
 
-      <img src="./images/profile.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
+      <img src="./images/profile.JPG" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
     </div>
 
     <!-- Hide this text on small devices -->
@@ -167,13 +182,14 @@ body, html {
   <p>lorem ipsum somethin something</p></div></div>
   </div>
      
-    <button class="btn btn-info" style="margin-top:64px;margin-left: auto">LOAD MORE</button>
+    <button href="./Blog.html" class="btn btn-default" style="margin-top:64px;margin-left:45%;margin-bottom: 10px;">LOAD MORE</button>
+
   </div>
 </div>
 
 <div class="bgimg-4 w3-display-container w3-opacity-min">
   <div class="w3-display-middle">
-    <span class="w3-xxlarge w3-text-white w3-wide">TUTORIAL</span>
+    <span class="w3-xxlarge w3-text-black w3-wide">TUTORIAL</span>
   </div>
 </div>
 <div  id="tutorial" style="text-align: center">
@@ -187,7 +203,8 @@ body, html {
   <div class="flex-item"><h4 style="  font-family: 'Anton', sans-serif;">2) lorem ipsum</h4><br>
   <p>lorem ipsum somethin something</p></div></div>
   </div>
-  <div class="btn btn-info btn-center">LOAD MORE</div>
+  
+  <button href ="./tutorial.html" class="btn btn-default" style="margin-top:64px;margin-left:45%;margin-bottom: 10px;">LOAD MORE</button>
 <!-- Third Parallax Image with Portfolio Text -->
 <div class="bgimg-3 w3-display-container w3-opacity-min">
   <div class="w3-display-middle">
